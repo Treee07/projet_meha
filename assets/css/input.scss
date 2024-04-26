@@ -1,0 +1,72 @@
+// Define spacing levels as per Bootstrap
+$spacings: (
+  6: 6rem,  
+  7: 12rem,
+  8: 24rem, 
+  9: 48rem,
+  10: 96rem 
+);
+
+// Generate margin and padding 
+@each $level, $value in $spacings {
+  .m-#{$level} {
+    margin: $value !important;
+  }
+
+  .mt-#{$level} {
+    margin-top: $value !important;
+  }
+
+  .mb-#{$level} {
+    margin-bottom: $value !important;
+  }
+
+  .ml-#{$level} {
+    margin-left: $value !important;
+  }
+
+  .mr-#{$level} {
+    margin-right: $value !important;
+  }
+  
+  .mx-#{$level} { 
+    margin-left: $value !important;
+    margin-right: $value !important;
+  }
+
+  .my-#{$level} { 
+    margin-top: $value !important;
+    margin-bottom: $value !important;
+  }
+
+  .p-#{$level} {
+    padding: $value !important;
+  }
+
+  .pt-#{$level} {
+    padding-top: $value !important;
+  }
+
+  .pb-#{$level} {
+    padding-bottom: $value !important;
+  }
+
+  .pl-#{$level} {
+    padding-left: $value !important;
+  }
+
+  .pr-#{$level} {
+    padding-right: $value !important;
+  }
+
+  .px-#{$level} { 
+    padding-left: $value !important;
+    padding-right: $value !important;
+  }
+
+  .py-#{$level} { 
+    padding-top: $value !important;
+    padding-bottom: $value !important;
+  }
+}
+
